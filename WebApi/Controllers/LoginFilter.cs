@@ -8,12 +8,18 @@ namespace WebApi.Controllers
 {
     public class LoginFilter : Attribute, IActionFilter
     {
-        string[] userType = Extension.Extensions.GetEnum(Extension.Enum.UserType2).Split("-");
+        //Get Enum Type As Array
+        //For Unauthorized User = UserType3
+        string[] userType = Extension.Extensions.GetEnum(Extension.Enum.UserType1).Split("-"); //Authorized User
 
+        // When Entered the Method
         public void OnActionExecuted(ActionExecutedContext context)
         {
+            //Show Logged in User
+            var result = userType[0] + ", başarıyla giriş yaptı.";
         }
 
+        // First Condition
         public void OnActionExecuting(ActionExecutingContext context)
         {
             var action = context.HttpContext.GetRouteData().Values["action"].ToString();

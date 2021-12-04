@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{E05ADB97-7FB1-44FD-BCD1-8DE9A9BCA779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{E05ADB97-7FB1-44FD-BCD1-8DE9A9BCA779}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension", "Extension\Extension.csproj", "{B9C9A233-31B8-484C-9D8D-A5A9C47E8344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extension", "Extension\Extension.csproj", "{B9C9A233-31B8-484C-9D8D-A5A9C47E8344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "Console\ConsoleApp.csproj", "{DF2AF4A1-EFE5-4331-8B29-8727C64FD230}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "Console\ConsoleApp.csproj", "{DF2AF4A1-EFE5-4331-8B29-8727C64FD230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

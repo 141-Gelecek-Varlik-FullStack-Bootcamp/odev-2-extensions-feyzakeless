@@ -9,7 +9,7 @@ namespace Extension
 {
     public enum Enum
     {
-
+        //Create Enum
         [Display(GroupName = "Yetkili", Name = "Müdür")]
         UserType1 = 1,
         [Display(GroupName = "Yetkili", Name = "Öğretmen")]

@@ -18,17 +18,12 @@ namespace WebApi.Controllers
             _logger = logger;
         }
 
-        public string SuccessPage()
-        {
-            return "Process is succeeded!";
-        }
-
         public IActionResult Index()
         {
-
             return View();
         }
 
+        //Added Attribute
         [HttpGet("login")]
         [LoginFilter]
         public IActionResult LoginAuthorized()
