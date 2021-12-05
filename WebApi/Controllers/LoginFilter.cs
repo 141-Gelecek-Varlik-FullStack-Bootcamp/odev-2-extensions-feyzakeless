@@ -1,4 +1,4 @@
-﻿using Extension;
+using Extension;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
@@ -19,10 +19,12 @@ namespace WebApi.Controllers
             var result = userType[0] + ", başarıyla giriş yaptı.";
         }
 
-        // First Condition
+        // Check Before Entering Method(Condition)
         public void OnActionExecuting(ActionExecutingContext context)
         {
+            //Variable Showing What Action You Are In
             var action = context.HttpContext.GetRouteData().Values["action"].ToString();
+            //User's authorization is checked 
             if (action == "LoginAuthorized" && userType[1] != "Yetkili")
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { Controller = "Home", Action = "Error" }));
